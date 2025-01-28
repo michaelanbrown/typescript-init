@@ -1,7 +1,45 @@
 Basic TypeScript Types:
+
 - Boolean
 - Number
 - String
     - Template Strings
 - Array
 - Enums (Enumerations)
+
+----------------------------------
+
+Declarations with let and const:
+
+console.log(someString);
+var someString = 'Hello World';
+
+console.log(someString);
+let someString = 'Hello World';
+**Variables declared with let may not be used prior to declaration so this will throw an error
+
+let someString = 'Hello World';
+console.log(someString);
+
+const someString = 'Hello World';
+console.log(someString);
+
+----------------------------------
+
+Type Annotations and Type Inference
+
+let x: string = 'I will forever be a string.';
+**Now that the variable is declared a string, that is the only type it can ever be.
+If trying to assign a different type (i.e. x = 42;) you will get a compiler error.
+
+**Annotations are added by placing a colon after the variable, followed by the type you want the variable to be.
+**You are not required to add type annotations to your declarations
+
+let y = 'I will also forever be a string.';
+**There is not type annotation but the variable will infer the type based on its initial value.
+If trying to assign a different type (i.e. y = 42;) you will get a compiler error.
+
+**Using annotations is more of a coding style because no matter what TypeScript will infer the type.
+You should use them for code clarity such as when a variable is a function and you do not know what the outcome of the function will be initially. (i.e. let z = GetSomeValue();)
+let z: number = GetSomeValue();
+
