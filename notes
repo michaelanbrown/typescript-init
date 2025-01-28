@@ -43,3 +43,50 @@ If trying to assign a different type (i.e. y = 42;) you will get a compiler erro
 You should use them for code clarity such as when a variable is a function and you do not know what the outcome of the function will be initially. (i.e. let z = GetSomeValue();)
 let z: number = GetSomeValue();
 
+----------------------------------
+
+Additional Types
+
+- Void (absence of a type)
+- Null
+- Undefined
+- Null and Undefined can be excluded from certain types
+- Never (Values that will never occur - ex: functions that will never return because they are continuous or throw an error)
+- Any (Can assign any type of value to it)
+
+----------------------------------
+
+Union Types
+
+Can unionize as many type as you want
+
+let someValue: number | string;
+someValue = 42;
+someValue = 'Hello World';
+someValue = true will throw a complier error
+**Can be a number or a string
+
+----------------------------------
+
+Using the --strictNullChecks Compiler Option
+
+- By default null and undefined can be used with any type but this leads to lots of bugs, that can be avoided with using this option in TypeScript
+- With this option set to true null and undefined are no longer valid values for any other type
+- You must allow them by setting a union type to null and undefined
+Assume we're using the strictNullChecks option:
+
+let basicString: string;
+basicString = null; (complier error)
+basicString = undefined; (complier error)
+
+let nullableString: string | null;
+nullableString = null;
+nullableString = undefined; (complier error)
+
+let mysteryString = string | null | undefined;
+mysteryString = null;
+mysteryString = undefined;
+
+----------------------------------
+
+Arrays
