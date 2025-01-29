@@ -107,3 +107,18 @@ let strArray2: Array<string> = ['more', 'strings', 'here'];
 ----------------------------------
 
 Controlling Program Flow
+
+- For loop (similar to JS)
+- While loops (similar to JS)
+- Switch (similar to JS)
+
+----------------------------------
+
+Understanding Control Flow Type Analysis
+
+- When declaring a function, parameters and the return should have type declarations
+function ExampleFunction(title: string) : string | number {
+    code
+}
+
+----------------------------------
