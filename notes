@@ -90,3 +90,20 @@ mysteryString = undefined;
 ----------------------------------
 
 Arrays
+
+- Arrays can be declared two diferent ways
+- The type declared is the type being stored in the array
+- If you want different types to be used in the array then declare the type as any
+    - let anyArray: any[] = [42, true, 'banana'];
+    - Should avoid using the any type declaration because it voids the benefits of using types
+- Accessed and used much like JavaScript (methods in JS are available in TS)
+
+1.
+let strArray1: string[]= ['here', 'are', 'strings'];
+
+2.
+let strArray2: Array<string> = ['more', 'strings', 'here'];
+
+----------------------------------
+
+Controlling Program Flow
