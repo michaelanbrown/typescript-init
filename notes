@@ -122,3 +122,9 @@ function ExampleFunction(title: string) : string | number {
 }
 
 ----------------------------------
+
+--noImplicitAny Compiler Option
+
+- Without type annotations the function parameters are implicitly assigned the any type which turns off type checking for that variable or parameter
+- If you want to avoid accidentally using the any type then you can usee the --noImplicitAny compiler option (this will throw an error)
+    - You can still explicitly use the any type, but cannot implicitly use it
