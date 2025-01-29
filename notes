@@ -187,3 +187,21 @@ Function Overloads
 
 - Because the type annotations are removed when the code compiles, JavaScript functions with the same name will cause a problem
     - In order to overload functions in TypeScript you will provide multiple function signatures, but only one implementation (must use type guards to determine which overload was called and what actin to perform)
+
+
+----------------------------------
+
+Taking Advantage of Function Types
+
+- Functions as a whole also have types, not just the parameters and return values
+    - It's a combination of parameter types and the return type
+    - function ReleaseMessage(year: number): string {
+        return 'Year released: ' + year;
+    }
+- The syntax for specifying a function type is to enclose the parameters and their types in parenthesis on the left side of an arrow and the return type of the function on the right side of the arrow. (Be careful of confusing this with arrow functions)
+    - Ex:
+        let releaseFunc: (someYear: number) => string;
+- Once a variable has been decalred and given that type, it can be assigned the function above, since the function shares the same type
+     - let message: string = releaseFunc(2024)
+- If the type of the function does not match the type in the variable declarartion, it will return a compiler error from TypeScript
+- Once the function has been assigned, it can be called with the variable that was declared
