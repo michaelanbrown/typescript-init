@@ -174,3 +174,16 @@ Arrow Functions
             return true;
         }
     });
+
+----------------------------------
+
+Function Overloads
+
+- Function overload means that you create multiple functions that have the same name, but differ in their signature somehow
+
+- One symbol name
+- Multiple function types
+- One implementation with type guards
+
+- Because the type annotations are removed when the code compiles, JavaScript functions with the same name will cause a problem
+    - In order to overload functions in TypeScript you will provide multiple function signatures, but only one implementation (must use type guards to determine which overload was called and what actin to perform)
