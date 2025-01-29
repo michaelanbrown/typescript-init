@@ -128,3 +128,29 @@ function ExampleFunction(title: string) : string | number {
 - Without type annotations the function parameters are implicitly assigned the any type which turns off type checking for that variable or parameter
 - If you want to avoid accidentally using the any type then you can usee the --noImplicitAny compiler option (this will throw an error)
     - You can still explicitly use the any type, but cannot implicitly use it
+
+----------------------------------
+
+Optional and Default Parameters
+
+- In JS all function parameters are optional, but in TS all parameters are required
+Optional:
+    - But can mark a parameter as optional using the ?
+    - Optional parameters must be last when declaring parameters
+      function CreateCustomer(name: string, age?: number) {}
+Default:
+    - Default parameters let you specifiy a default value to use for optional or required parameters
+    - Default parameters are treated as optional if they appear after all other parameters
+    Can be a literal value or a function expression
+      function GetBookByTitle(title: string = 'The C Programming Language') {} OR
+      function GetBookByTitle(title: string = GetMostPopularBook()) {}
+Rest Parameters:
+    - Rest parameters give you a mechanism for passing a variable number of additional parameters after those specifically required in the function definition
+    - Think of them as the rest of the parameters the function expects
+    - Rest parameters are denoted with an ellipsos (...) prefix on the parameter name
+      function GetBooksReadForCust(name: string, ...bookIds: number[]) {}
+      let books = GetBooksReadForCust('Leigh', 2, 5);
+        - bookIds is declared as a number array
+        - The number array will contain 2 and 5
+      let books = GetBooksReadForCust('Daniel', 2, 5, 12, 42);
+        - The number array will contain 2, 5, 12, and 42
