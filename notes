@@ -129,6 +129,8 @@ function ExampleFunction(title: string) : string | number {
 - If you want to avoid accidentally using the any type then you can usee the --noImplicitAny compiler option (this will throw an error)
     - You can still explicitly use the any type, but cannot implicitly use it
 
+- Compilers will use the any type for parameters as it cannot accurately predict the type of parameters
+
 ----------------------------------
 
 Optional and Default Parameters
@@ -147,7 +149,7 @@ Default:
 Rest Parameters:
     - Rest parameters give you a mechanism for passing a variable number of additional parameters after those specifically required in the function definition
     - Think of them as the rest of the parameters the function expects
-    - Rest parameters are denoted with an ellipsos (...) prefix on the parameter name
+    - Rest parameters are denoted with an ellipsis (...) prefix on the parameter name
       function GetBooksReadForCust(name: string, ...bookIds: number[]) {}
       let books = GetBooksReadForCust('Leigh', 2, 5);
         - bookIds is declared as a number array
