@@ -205,3 +205,20 @@ Taking Advantage of Function Types
      - let message: string = releaseFunc(2024)
 - If the type of the function does not match the type in the variable declarartion, it will return a compiler error from TypeScript
 - Once the function has been assigned, it can be called with the variable that was declared
+
+----------------------------------
+
+Working with Interfaces
+
+- Interfaces are defined with the "interface" keyword
+- List their properties with their types
+- Can specify optional properties with the "?"
+- Can provide function signatures - no implementation
+
+interface Book {
+    id: number;
+    title: string;
+    author: string;
+    pages?: number;
+    markDamaged: (reason: string) => void;
+}
