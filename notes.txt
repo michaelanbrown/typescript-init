@@ -222,3 +222,8 @@ interface Book {
     pages?: number;
     markDamaged: (reason: string) => void;
 }
+
+- With interfaces you specify the return value with a : instead of =>
+    interface ReviewLogger {
+        (review: string): void;
+    }
