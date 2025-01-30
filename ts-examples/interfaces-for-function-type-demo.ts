@@ -39,7 +39,7 @@ function PrintMovieInfo(movie: Movie) {
     console.log(`Cast:`);
 }
 
-let myMovie = {
+let myDemoMovie = {
     title: 'Rogue One', //in Movie interface
     director: 'Gareth Edwards', //in Movie interface
     yearReleased: 2016, //in Movie interface
@@ -49,7 +49,7 @@ let myMovie = {
 }
 
 //Now that the movie interface is declared, we cannot have extra parameters
-let myDeclaredMovie: Movie = {
+let myDecMovie: Movie = {
     title: 'Rogue One', //in Movie interface
     director: 'Gareth Edwards', //in Movie interface
     yearReleased: 2016, //in Movie interface
@@ -58,12 +58,12 @@ let myDeclaredMovie: Movie = {
     logReview: (review: string) => console.log(`Review ${review}`)
 }
 
-PrintMovieInfo(myMovie); //No error messages - duck typing. Even though myMovie isn't declared with the Movie interface, it has all of the required properties that the Movie interface has so it can be used.
+PrintMovieInfo(myDemoMovie); //No error messages - duck typing. Even though myMovie isn't declared with the Movie interface, it has all of the required properties that the Movie interface has so it can be used.
 
 
 // We need to use an if statement to use optional methods because since it is optional, if it is not present then it will throw an error.
-if (myDeclaredMovie.logReview) {
-    myDeclaredMovie.logReview('A masterpiece');
+if (myDecMovie.logReview) {
+    myDecMovie.logReview('A masterpiece');
 }
 
 let printReview: ReviewLogger;
