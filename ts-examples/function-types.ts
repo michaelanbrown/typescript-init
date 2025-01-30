@@ -1,5 +1,5 @@
 // The string and number parameters define the type of the function
-function CreateMovieID(name: string, id: number): string {
+function CreateMovieId(name: string, id: number): string {
     return name + id;
 }
 
