@@ -18,3 +18,21 @@ let refBook: Encyclopedia = {
     volume: 1
 }
 
+//Demo:
+interface Person {
+    name: string;
+    email: string;
+}
+
+interface Director extends Person {
+    numMoviesDirected: number;
+}
+
+interface CastMember extends Person {
+    role: string;
+    rehearse: (sceneNumber: number) => void;
+}
+
+// let favoriteDirector: Director = {}
+
+// let favoriteCastMember: CastMember = {}
