@@ -228,5 +228,8 @@ interface Book {
         (review: string): void;
     }
 
+- Interfaces don't have an equivalent construct in JavaScript, so when compiling code it will remove the interfaces
+    - Interfaces are mostly for developers and for the TypeScript compiler to enforce type checking
+
 ----------------------------------
 
