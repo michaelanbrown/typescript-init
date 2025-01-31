@@ -243,3 +243,30 @@ Creating and Using Classes
 - A class is a template for creating objects
 - All objects created from the template will have the same properties and methods
 - Classes provide state storage and behavior
+
+----------------------------------
+
+Constructors
+
+- Functions that perform initialization for new instances of a class
+- A class's constructor looks like any other method except it's named constructor
+     - Maximum of one per class
+- Some OOP languages allow you to create multiple constructors that differ by the number of parameters they accept, and you can achieve similar goals in TypeScript through the use of optional parameters
+- You don't execute the constructor by calling the constructor by name, you use the class name and the new keyword
+- Similar to interfaces but different in the sense that constructors provide the actual implementation details
+- Accessors:
+    - Getter (get)
+        - Will always contain and empty set of () after the name
+        - Can optionally set a return type
+    - Setter (set)
+        - Must be passed exactly one parameter
+        - Cannot specify a return type
+- Static properties are properties on the class itself, not on instances of the class
+- Access modifiers are keywords that can be added to property and method definitions to control their visibility for consumers of the class
+- By default, akk class members are public, but constructor parameters are not
+    - The pulbic keyword is required to delcare a constructor parameter as a class property
+    - Can use the private modifier to declare that a class member should only be accessible inside that class
+    - Member declared private won't be accessible to consumers of the class or in subclasses
+- Private fields are specified by putting the hash # symbol in front of field names
+- Members declared as protected will only be available inside the class in which they are declared and any subclasses of that class
+    - They're not publicly available on instance objects
