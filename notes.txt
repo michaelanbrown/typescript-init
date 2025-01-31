@@ -273,6 +273,11 @@ Constructors
 
 ----------------------------------
 
-Extending Classes with Inheritance
+Abstract Classes
 
-- 
+- Created by adding the abstract keyword in front of the class definition
+- Similar to regular classes but may only be used as base classes from which other classes are derived via inheritance
+- Can't directly instantiate abstract classes
+- Similar to interfaces but can have implementation details
+- Can define abstract methods that are not implemented
+    - Abstract methods must be implemented in derived classes
