@@ -233,3 +233,13 @@ interface Book {
 
 ----------------------------------
 
+Creating and Using Classes
+
+- Helps developers create their own types
+- Class Members:
+    - Constructors
+    - Properties
+    - Methods
+- A class is a template for creating objects
+- All objects created from the template will have the same properties and methods
+- Classes provide state storage and behavior
