@@ -270,3 +270,9 @@ Constructors
 - Private fields are specified by putting the hash # symbol in front of field names
 - Members declared as protected will only be available inside the class in which they are declared and any subclasses of that class
     - They're not publicly available on instance objects
+
+----------------------------------
+
+Extending Classes with Inheritance
+
+- 
