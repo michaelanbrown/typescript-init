@@ -1,5 +1,5 @@
 
-class Videos {
+abstract class Videos {
 
     private _producer: string = '';
     static medium: string = 'Audio/Visual'; //static properties are only available on the class, not instances
@@ -19,6 +19,7 @@ class Videos {
         console.log(`${this.title} was released in ${this.year}.`);
         console.log(`Medium: ${Video.medium}`);
     }
+    abstract printCredits(): void;
 }
 
 class Documentaries extends Videos {
@@ -31,14 +32,15 @@ class Documentaries extends Videos {
         super.printItem(); //Don't need to call this method if you don't want the super's printItems method included
         console.log(`Subject: ${this.subject} (${this.year})`);
     }
+    printCredits(): void {
+        console.log(`Producer: ${this.producer}`);
+    }
 }
 
-let vid1: Videos = new Videos('A New Hope', 1977);
-//or can be let video = new Vid('A New Hope', 1977);
-vid1.printItem();
-vid1.producer = 'Sci-Fi Pictures';
-console.log(video.producer);
+// Cannot create new Videos instances because Videos is abstract
 
-let vid2 = new Documentaries('The History of Movies', 2024, 'film history'); // needs 2 arguments because it must call parents's constructor
-vid2.printItem();
+let vid2: Videos = new Documentaries('The History of Movies', 2024, 'film history'); // needs 2 arguments because it must call parents's constructor
+// Don't need to declare the Videos class
+vid2.producer = 'Sci-Fi Pictures'
+vid2.printCredits();
 
