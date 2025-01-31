@@ -46,6 +46,3 @@ class Library {
 let lib = new Library('New York Public Library');
 let name = lib.name //available on instances of the class
 let desc = Library.description // available on the class
-
-// -----------ACCESS MODIFIERS-------------------
-

@@ -34,7 +34,7 @@ class Vid {
     }
 }
 
-class Documentary extends Video {
+class Documentary extends Vid {
 
     constructor(newTitle: string, newYear: number, public subject: string) {
         super(newTitle, newYear);
