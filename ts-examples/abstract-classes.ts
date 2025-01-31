@@ -44,3 +44,21 @@ let vid2: Videos = new Documentaries('The History of Movies', 2024, 'film histor
 vid2.producer = 'Sci-Fi Pictures'
 vid2.printCredits();
 
+
+
+//Class expressions
+let Musical = class extends Video {
+    printCredits(): void {
+        console.log(`Musical credits: ${this.producer}`);
+    }
+}
+
+let myMusical = new Musical('Grease', 1978)
+myMusical.producer = 'Sing-Song Pictures';
+myMusical.printCredits();
+
+class Course extends class { title: string = '';} {
+    subject: string = '';
+}
+
+let myCourse = new Course();
