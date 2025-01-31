@@ -42,7 +42,7 @@ class Documentary extends Video {
 
     printItem(): void {
         super.printItem(); //Don't need to call this method if you don't want the super's printItems method included
-        console.log(`Subject: %{this.subject} (${this.year})`);
+        console.log(`Subject: ${this.subject} (${this.year})`);
     }
 }
 
