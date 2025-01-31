@@ -281,3 +281,10 @@ Abstract Classes
 - Similar to interfaces but can have implementation details
 - Can define abstract methods that are not implemented
     - Abstract methods must be implemented in derived classes
+
+----------------------------------
+
+Class Expressions
+
+ - Define a class, but can only be used where you might normally use other Expressions
+ - Giving a name to a class in a class expression is optional, and will only be available in the class is one is provided
