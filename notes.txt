@@ -316,3 +316,23 @@ Non-Relative:
 - Should use relative references when referring to your own modules
 - Should use non-relative references when referring to third-party modules
 - TypeScript resolves location of modules by first checking if they're relative or not, then uses that strategy
+
+----------------------------------
+
+Asynchronous Code
+
+- Callback functions are functions you pass to other functions as parameters that can be called when asynchronous task completes
+- Promises
+- Asynch
+- Await
+- Asynchronous code is used to help build more responsive applications that deliver a great experience for users
+    - Your app can continue to perform other tasks while a slow task is running in the background so it doesn't look like the program is frozen
+- Promises: The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value
+    - Objects that in most cases encapsulate the data returned from an asynchronous operation
+    - Primary instance methods:
+        - Then
+        - Catch
+    - Instance methods on Promises are designed to also return Promises, which means that you can chain Promises together
+        - Helpful is you want an asynchronous operation to begin only after a previous one completes
+    - Promises are created by passing a function with a very specific sugnature to the Promise constructor
+    - PRomise constructor takes a single function as a parameter and that function accepts two parameters
