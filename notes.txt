@@ -288,3 +288,11 @@ Class Expressions
 
  - Define a class, but can only be used where you might normally use other Expressions
  - Giving a name to a class in a class expression is optional, and will only be available in the class is one is provided
+
+----------------------------------
+
+Modules
+
+- Allow you to encapsulate implementation details inside the module and only expose an API for other modules to use
+- Freedom to refactor code inside module and not affect users of the module as long as the API for it doesn't change
+- Reuseable -> if designed to implement a specific functionality, they can be used throughout an app or dropped into other apps
