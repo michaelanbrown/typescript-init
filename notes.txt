@@ -297,3 +297,22 @@ Modules
 - Freedom to refactor code inside module and not affect users of the module as long as the API for it doesn't change
 - Reuseable -> if designed to implement a specific functionality, they can be used throughout an app or dropped into other apps
 - API is defined by items exported from the module
+
+----------------------------------
+
+Relative and Non-Relative Imports
+
+Relative:
+- /example -> found in root of file system
+- ./example -> found in same directory as the current file
+- ../HR/example -> goes up one directory then looks for the HR directory, then looks for the example file in the HR directory
+
+Non-Relative:
+- import * as $ from 'example'
+- import * as star from 'example'
+--> Finds these modules by walking up the directory tree until it finds the node_modules folder and will look for the module in there
+
+
+- Should use relative references when referring to your own modules
+- Should use non-relative references when referring to third-party modules
+- TypeScript resolves location of modules by first checking if they're relative or not, then uses that strategy
