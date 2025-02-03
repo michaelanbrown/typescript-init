@@ -335,4 +335,4 @@ Asynchronous Code
     - Instance methods on Promises are designed to also return Promises, which means that you can chain Promises together
         - Helpful is you want an asynchronous operation to begin only after a previous one completes
     - Promises are created by passing a function with a very specific sugnature to the Promise constructor
-    - PRomise constructor takes a single function as a parameter and that function accepts two parameters
+    - Promise constructor takes a single function as a parameter and that function accepts two parameters
