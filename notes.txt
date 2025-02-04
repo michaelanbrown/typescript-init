@@ -339,6 +339,6 @@ Asynchronous Code
 
 ----------------------------------
 
-Asynch/Await
+Async/Await
 
 - Allows code to be written more linearly
