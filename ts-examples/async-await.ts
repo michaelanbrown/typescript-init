@@ -2,11 +2,11 @@ function GetDataFromServer() {
     console.log(`Example function`);
 }
 
-async function doAsynchStuff {
+async function doAsyncStuff {
     let results = await GetDataFromServer();
     console.log(results);
 }
 
 console.log('Calling server to retrieve data...');
-doAsynchStuff();
+doAsyncStuff();
 console.log('Results will be displayed when ready...');
