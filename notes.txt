@@ -336,3 +336,9 @@ Asynchronous Code
         - Helpful is you want an asynchronous operation to begin only after a previous one completes
     - Promises are created by passing a function with a very specific sugnature to the Promise constructor
     - Promise constructor takes a single function as a parameter and that function accepts two parameters
+
+----------------------------------
+
+Asynch/Await
+
+- Allows code to be written more linearly
