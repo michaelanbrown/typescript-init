@@ -342,3 +342,19 @@ Asynchronous Code
 Async/Await
 
 - Allows code to be written more linearly
+
+----------------------------------
+
+Creating and Using Generics
+
+- Generics allow you to write functions, classes, and interfaces once, but have them operate over lots of different types
+- Type parameters are the construct used to define generics
+- Generics are bits of code designed to work with multiple types instead of a single type
+- They are able to work with multiple types by accepting type parameters that specify which type it should use for a particular variable insteance or function invocation
+- Type parameters are a special kind of parameter that let you specify the type that a particular object instance or function invocation will use
+- The type passed to the type parameter determines the type that instance will use
+- Type parameters are different from function or constructor parameters and are passed inside angle brackets just before the parentheses surrounding function parameters
+- The placeholder for a generic parameter is represented by a capital letter T
+    - This isn't a requirement, you can use any word or letter you like
+
+----------------------------------
