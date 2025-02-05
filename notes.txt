@@ -358,3 +358,7 @@ Creating and Using Generics
     - This isn't a requirement, you can use any word or letter you like
 
 ----------------------------------
+
+Array<T>
+
+- Array<T> is a generic array type
