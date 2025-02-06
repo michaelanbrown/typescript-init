@@ -362,3 +362,9 @@ Creating and Using Generics
 Array<T>
 
 - Array<T> is a generic array type
+
+----------------------------------
+
+Generic Functions
+
+- Accept a type parameter that is either specified or inferred by the compiler every time the function is invoked
