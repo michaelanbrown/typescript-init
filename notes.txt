@@ -368,3 +368,11 @@ Array<T>
 Generic Functions
 
 - Accept a type parameter that is either specified or inferred by the compiler every time the function is invoked
+
+----------------------------------
+
+Generic Interfaces and Classes
+
+- Similar to non-generic interfaces
+- Only difference is the list of type parameters that appear after the interface name and the addition of a type parameter that can be used inside the class
+- Can specify more than one interface by separating them with commas inside the angle brackets
