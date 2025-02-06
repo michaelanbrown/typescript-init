@@ -16,16 +16,16 @@ function GetTitles(bookProperty: any): string[] {
 
 // ---------------------------------------------------------------------------
 
-function GetAllMovies() {
-    return [
-        {title: 'A New Hope', director: 'George Lucas', yearReleased: 1977, streaming: true},
-        {title: 'The Empire Strikes Back', director: 'Irvin Kershner', yearReleased: 1980, streaming: true},
-        {title: 'Return of the Jedi', director: 'Richard Marquand', yearReleased: 1983, streaming: true},
-        {title: 'The Phantom Menace', director: 'George Lucas', yearReleased: 1999, streaming: false},
-        {title: 'Attack of the Clones', director: 'George Lucas', yearReleased: 2002, streaming: true},
-        {title: 'Revenge of the Sith', director: 'George Lucas', yearReleased: 2005, streaming: true},
-    ];
-}
+// function GetAllMovies() {
+//     return [
+//         {title: 'A New Hope', director: 'George Lucas', yearReleased: 1977, streaming: true},
+//         {title: 'The Empire Strikes Back', director: 'Irvin Kershner', yearReleased: 1980, streaming: true},
+//         {title: 'Return of the Jedi', director: 'Richard Marquand', yearReleased: 1983, streaming: true},
+//         {title: 'The Phantom Menace', director: 'George Lucas', yearReleased: 1999, streaming: false},
+//         {title: 'Attack of the Clones', director: 'George Lucas', yearReleased: 2002, streaming: true},
+//         {title: 'Revenge of the Sith', director: 'George Lucas', yearReleased: 2005, streaming: true},
+//     ];
+// }
 
 function GetReview(title: string): string | number {
     if (title == 'A New Hope') {

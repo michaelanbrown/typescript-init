@@ -8,7 +8,7 @@ interface Movie {
 }
 
 //Now that the movie interface is declared in the function below, every object in the array must have the properties declared in the above interface.
-function GetAllMovies(): Movie[] {
+export default function GetAllMovies(): Movie[] {
     return [
         {title: 'A New Hope', director: 'George Lucas', yearReleased: 1977, streaming: true},
         {title: 'The Empire Strikes Back', director: 'Irvin Kershner', yearReleased: 1980, streaming: true},

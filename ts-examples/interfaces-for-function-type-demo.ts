@@ -1,4 +1,4 @@
-interface Movie {
+export default interface Movie {
     title: string,
     director: string,
     yearReleased: number,
@@ -12,16 +12,16 @@ interface ReviewLogger {
 }
 
 //Now that the movie interface is declared in the function below, every object in the array must have the properties declared in the above interface.
-function GetAllMovies(): Movie[] {
-    return [
-        {title: 'A New Hope', director: 'George Lucas', yearReleased: 1977, streaming: true},
-        {title: 'The Empire Strikes Back', director: 'Irvin Kershner', yearReleased: 1980, streaming: true},
-        {title: 'Return of the Jedi', director: 'Richard Marquand', yearReleased: 1983, streaming: true},
-        {title: 'The Phantom Menace', director: 'George Lucas', yearReleased: 1999, streaming: false},
-        {title: 'Attack of the Clones', director: 'George Lucas', yearReleased: 2002, streaming: true},
-        {title: 'Revenge of the Sith', director: 'George Lucas', yearReleased: 2005, streaming: true},
-    ];
-}
+// function GetAllMovies(): Movie[] {
+//     return [
+//         {title: 'A New Hope', director: 'George Lucas', yearReleased: 1977, streaming: true},
+//         {title: 'The Empire Strikes Back', director: 'Irvin Kershner', yearReleased: 1980, streaming: true},
+//         {title: 'Return of the Jedi', director: 'Richard Marquand', yearReleased: 1983, streaming: true},
+//         {title: 'The Phantom Menace', director: 'George Lucas', yearReleased: 1999, streaming: false},
+//         {title: 'Attack of the Clones', director: 'George Lucas', yearReleased: 2002, streaming: true},
+//         {title: 'Revenge of the Sith', director: 'George Lucas', yearReleased: 2005, streaming: true},
+//     ];
+// }
 
 function GetReview(title: string): string | number {
     if (title == 'A New Hope') {
