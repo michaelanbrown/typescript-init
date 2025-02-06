@@ -376,3 +376,10 @@ Generic Interfaces and Classes
 - Similar to non-generic interfaces
 - Only difference is the list of type parameters that appear after the interface name and the addition of a type parameter that can be used inside the class
 - Can specify more than one interface by separating them with commas inside the angle brackets
+
+----------------------------------
+
+Generic Constraints
+
+- Genric constraints describe the types that may be passed as a type parameter
+- Constraints are most often implemented as interfaces that describe the shape of types that may be used as a type parameter

@@ -1,8 +1,7 @@
 import Movie from "./interfaces-for-function-type-demo";
-
 import GetAllMovies from "./declaring-and-using-interfaces";
 
-interface Intentory<T> {
+export default interface Inventory<T> {
     getNewestItem: () => T; //no parameters and returns value of type T
     addItem: (newItem: T) => void; //type T parameter and returns void
     getAllItems: () => Array<T>; //returns array of whatever type is provided for T
