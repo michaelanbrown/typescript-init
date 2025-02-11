@@ -408,3 +408,18 @@ Using Type Declaration Files
     - Provide value faster
 
 ----------------------------------
+
+Applying TypeScript Decorators
+
+- A decorator is just a function that's applied to other code in your applications
+- They decorate your code much like a nice ribbon might decorate the wrapper paper on a present
+- Since they operate on other code, they're a dorm of metaprogramming
+- Deocratorsdecorate other code and, in TypeScript, can be applied to classes, mathod, properties, fields, and getters and setters
+    - When applied to these constructs, decorators can modify how they each behave
+- Note that decorators have changed in TypeScript 5, so you may see old documentation that inaccurate or future documentation that is more accurate
+- Decorators in TypeScript 5 support the JavaScript decorator specification that will be included in a future release of the language
+- Another benefit to TypeScript is that you get access to many JavaScript features before they're an official part of the JavaScript language
+- Decorators in earlier version of TypeScript are not compatible with decorators in TypeScript 5 because decorators were just introdcued to JavaScript
+- TypeScript 5 decorators also do not require the --experimentalDecorators or --emitDecoratorMetadata compiler flags
+
+----------------------------------
