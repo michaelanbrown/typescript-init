@@ -423,3 +423,11 @@ Applying TypeScript Decorators
 - TypeScript 5 decorators also do not require the --experimentalDecorators or --emitDecoratorMetadata compiler flags
 
 ----------------------------------
+
+Debugging TypeScrpt Code
+
+- Source maps are the secret ingredient that let you perform common debugging tasks like creating breakpoints and watches, and stepping through your TypeScript code
+- They map your source TypeScript to the JavaScript output by the compiler
+- You can't execute your TypeScript directly, so without source maps, you would be forced to debug the JavaScript output by the TypeScript compiler
+- After you create source maps for your code, a debugger will execute the JavaScript output by the compiler, but allow you to step through and debug your source TypeScript files
+- Source maps are created by just setting the --sourceMap compiler option to true
