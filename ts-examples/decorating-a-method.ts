@@ -1,5 +1,6 @@
+import Documentaries from "./abstract-classes";
 
-abstract class Videos {
+abstract class Vids {
 
     private _producer: string = '';
     static medium: string = 'Audio/Visual'; //static properties are only available on the class, not instances
@@ -22,12 +23,13 @@ abstract class Videos {
     abstract printCredits(): void;
 }
 
-export default class Documentaries extends Videos {
+export default class Docs extends Vids {
 
     constructor(newTitle: string, newYear: number, public subject: string) {
         super(newTitle, newYear);
     }
 
+    @logMethodInfo //ADD DECORATOR HERE
     printItem(): void {
         super.printItem(); //Don't need to call this method if you don't want the super's printItems method included
         console.log(`Subject: ${this.subject} (${this.year})`);
@@ -37,28 +39,17 @@ export default class Documentaries extends Videos {
     }
 }
 
-// Cannot create new Videos instances because Videos is abstract
+let sportsDoc: Documentaries = new Documentaries('Baseball', 1994, 'History');
+sportsDoc.printItem();
 
-let vid2: Videos = new Documentaries('The History of Movies', 2024, 'film history'); // needs 2 arguments because it must call parents's constructor
-// Don't need to declare the Videos class
-vid2.producer = 'Sci-Fi Pictures'
-vid2.printCredits();
+export function logMethodInfo(origMethod: any, _context: ClassMethodDecoratorContext) {
+    function replacementMethod(this: any, ...args: any[]) {
 
+        console.log(`Decorated construct: ${_context.kind}`); //kind of construct which the decoartor was applied to
+        console.log(`Decorated construct name: ${_context.name as string}`); //name of construct which the decoartor was applied to
 
-
-//Class expressions
-let Musical = class extends Video {
-    printCredits(): void {
-        console.log(`Musical credits: ${this.producer}`);
+        const result = origMethod.call(this, ...args); //calling original function
+        return result;
     }
+    return replacementMethod;
 }
-
-let myMusical = new Musical('Grease', 1978)
-myMusical.producer = 'Sing-Song Pictures';
-myMusical.printCredits();
-
-class Course extends class { title: string = '';} {
-    subject: string = '';
-}
-
-let myCourse = new Course();
