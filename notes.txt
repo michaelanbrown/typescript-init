@@ -383,3 +383,22 @@ Generic Constraints
 
 - Genric constraints describe the types that may be passed as a type parameter
 - Constraints are most often implemented as interfaces that describe the shape of types that may be used as a type parameter
+
+----------------------------------
+
+Using Type Declaration Files
+
+- Type declaration files are really just wrappers for existing JavaScript libraries
+    - Goal of these files are to declare types for varaibles, functions, objects, and other constructs in the library that match the intended use of those items
+    - Allows the TypeScript compiler to make sure you're using the lirbary correctly
+- They don't replace JavaScript libraries, so will still need to install those too
+- End is a d.ts extension
+- Any time you decide to include a JavaScipt library, you should always check if there's a declaration file available for it
+- Where to find type declaration files:
+    - Included with library you want to use
+    - If on the npm website, look for the TypeScript logo next to the package name, it means type declarations are included with the library
+    - There's a repository of type declaration files created by the JavaScript and TypeScript communities called DefinitelyTyped
+        - In GitHub
+- Installation process:
+    - Install with the Node Package Manager, npm
+    - All exist in the @types organization and usually have a name that matches the library they go with
