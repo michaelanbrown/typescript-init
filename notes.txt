@@ -402,3 +402,9 @@ Using Type Declaration Files
 - Installation process:
     - Install with the Node Package Manager, npm
     - All exist in the @types organization and usually have a name that matches the library they go with
+- Benefits:
+    - Write code faster
+    - Find errors faster
+    - Provide value faster
+
+----------------------------------
